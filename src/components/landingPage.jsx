@@ -1,4 +1,3 @@
-import React from "react";
 import { MoveUpRight } from "lucide-react";
 
 function landingPage() {
@@ -7,9 +6,14 @@ function landingPage() {
       <div className="textstructure mt-40 px-15">
         {["we create", "Eye-opening", "presentations"].map((item, index) => (
           <div className="masker" key={index}>
-            <h1 className="uppercase text-8xl font-semibold leading-[5.5vw]  tracking-tighter font-[FoundersGrotesk]">
-              {item}
-            </h1>
+            <div className="w-fit flex gap-3  ">
+              {index == 1 && (
+                <div className="w-[8vw] h-[5vw]   bg-red-800"></div>
+              )}
+              <h1 className="mr-[1vw] uppercase text-8xl   font-semibold leading-[5.5vw]  tracking-tighter font-[FoundersGrotesk]">
+                {item}
+              </h1>
+            </div>
           </div>
         ))}
       </div>
@@ -31,7 +35,7 @@ function landingPage() {
               </div>
             </div>
             <div>
-              <MoveUpRight className="arrow h-10  w-10 rounded-full border mt-1 border-gray-600" />
+              <MoveUpRight className="arrow h-10  w-10 rounded-full border mt-1 border-gray-600 " />
             </div>
           </div>
         </div>
