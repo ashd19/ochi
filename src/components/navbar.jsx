@@ -2,7 +2,7 @@ import React from "react";
 
 function navbar() {
   return (
-    <div className="w-full px-20 py-8 font-['NeueMontreal'] flex  justify-between ">
+    <div className="fixed z-999 w-full px-20 py-8 font-['NeueMontreal-Regular'] flex  justify-between ">
       <div className="logo">
         <svg
           width="72"
@@ -34,12 +34,12 @@ function navbar() {
           ></path>
         </svg>
       </div>
-      <div className="links flex capitalize gap-10">
+      <div className="links flex capitalize gap-8">
         {["Services", "Our work", "About us", "Insights", "Contact us"].map(
           (item, index) => (
             <a
               key={index}
-              className={`text-md font-light ${index == 4 && "ml-32"}`}
+              className={`text-lg font-light ${index == 4 && "ml-40"}`}
               href=""
             >
               {item}
