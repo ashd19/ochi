@@ -1,6 +1,7 @@
 import Navbar from "./components/navbar";
 import LandingPage from "./components/landingPage";
 import Marquee from "./components/marquee";
+import AboutUs from "./components/AboutUs";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <LandingPage />
 
       <Marquee />
+      <AboutUs />
     </div>
   );
 }
