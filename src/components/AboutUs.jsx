@@ -69,7 +69,7 @@ function AboutUs() {
             </h1>
           </div>
           <a href="/">
-            <div className="bg-black text-white uppercase rounded-4xl p-2  w-50 h-[35px] ">
+            <div className="bg-black text-white uppercase rounded-4xl p-4 w-[200px] text-center font-[NeueMontreal]">
               Read more
             </div>
           </a>
