@@ -68,11 +68,10 @@ function AboutUs() {
               How can we help :
             </h1>
           </div>
-          <a href="/">
-            <div className="bg-black text-white uppercase rounded-4xl p-4 w-[200px] text-center font-[NeueMontreal]">
-              Read more
-            </div>
-          </a>
+          <button className="bg-black flex items-center justify-between uppercase text-white  rounded-4xl px-10 py-6  font-[NeueMontreal]">
+            Read more
+            <div className="w-2 h-2 bg-zinc-100 rounded-full "></div>
+          </button>
         </div>
         {/* pic  */}
         <div>
