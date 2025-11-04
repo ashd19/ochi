@@ -60,6 +60,29 @@ function AboutUs() {
           </div>
         </div>
       </div>
+      {/* How can we help  */}
+      <div className="flex border-t-2 p-10  border-white/50 justify-between">
+        <div>
+          <div className="">
+            <h1 className="text-[4vw] font-[NeueMontreal] tracking-tight">
+              How can we help :
+            </h1>
+          </div>
+          <a href="/">
+            <div className="bg-black text-white uppercase rounded-4xl p-2  w-50 h-[35px] ">
+              Read more
+            </div>
+          </a>
+        </div>
+        {/* pic  */}
+        <div>
+          <img
+            className="w-[600px] h-[450px]"
+            src="src/assets/pic.jpg"
+            alt=""
+          />
+        </div>
+      </div>
     </div>
   );
 }
