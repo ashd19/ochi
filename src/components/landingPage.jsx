@@ -20,7 +20,7 @@ function landingPage() {
         </div>
         <div className="siteoftheday">
           <div className="absolute right-8 top-1/2 -translate-y-1/2">
-            <div className="bg-red-500 w-[3.5rem] h-[9rem] flex items-center justify-center">
+            <div className="bg-red-500 w-14 h-36 flex items-center justify-center">
               <h1 className="text-white font-bold rotate-270 text-xs leading-none">
                 Site of the day
               </h1>
