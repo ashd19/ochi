@@ -1,4 +1,5 @@
 import Box from "./Box.jsx";
+
 function Featured() {
   return (
     <div className="w-full py-20">
@@ -9,28 +10,45 @@ function Featured() {
       </div>
       <div className="px-20">
         <div className="cards w-full mt-10 flex gap-10">
-          <div className="cardcontainer w-1/2   h-[80vh] ">
-            <h1 className="mb-2">
-              {" "}
-              <li className="ml-6">FYDE</li>
-            </h1>
+          <div className="cardcontainer w-1/2 relative h-[80vh]">
+            <p className="mb-2 font-['NeueMontreal'] text-lg ml-6">FYDE</p>
 
-            <img className="card w-full h-full bg-cover rounded-xl overflow-hidden bg-[url('src/assets/fyde.png')]"></img>
-            <div className="mt-3 flex  gap-5">
+            <div className="relative w-full h-full">
+              <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[#CDEA68] font-['NeueMontreal'] font-semibold text-9xl z-[9] pointer-events-none">
+                FYDE
+              </h1>
+
+              <div
+                className="card w-full h-full rounded-xl overflow-hidden bg-cover bg-center"
+                style={{ backgroundImage: "url('src/assets/fyde.png')" }}
+              />
+            </div>
+
+            <div className="mt-3 flex gap-5">
               <Box text={"BRAND IDENTITY"} />
-
               <Box text={"pitch deck"} />
             </div>
           </div>
-          <div className="cardcontainer w-1/2  h-[80vh] ">
-            <h1 className="mb-2">
-              <li className="ml-6">Meddalia Experience</li>
-            </h1>
-            <div className="card w-full h-full bg-cover rounded-xl overflow-hidden bg-[url('src/assets/meddalia.png')]"></div>
-            <div className="mt-3 flex  gap-5">
-              <Box text={"brand identity"} />
 
-              <Box text={"Executive keynote "} />
+          <div className="cardcontainer relative w-1/2 h-[80vh]">
+            <p className="mb-2 uppercase font-['NeueMontreal'] text-lg ml-6">
+              Meddalia Experience
+            </p>
+
+            <div className="relative w-full h-full">
+              <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[#CDEA68] font-['NeueMontreal'] font-semibold text-7xl z-[9] pointer-events-none whitespace-nowrap">
+                Meddalia Experience
+              </h1>
+
+              <div
+                className="card w-full h-full rounded-xl overflow-hidden bg-cover bg-center"
+                style={{ backgroundImage: "url('src/assets/meddalia.png')" }}
+              />
+            </div>
+
+            <div className="mt-3 flex gap-5">
+              <Box text={"brand identity"} />
+              <Box text={"Executive keynote"} />
               <Box text={"product launch"} />
             </div>
           </div>

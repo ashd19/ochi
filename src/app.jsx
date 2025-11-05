@@ -4,10 +4,11 @@ import Marquee from "./components/marquee";
 import AboutUs from "./components/AboutUs";
 import Eyes from "./components/Eyes";
 import Featured from "./components/Featured";
+import Cards from "./components/Cards";
 
 function App() {
   return (
-    <div className="w-full h-screen  ">
+    <div className="w-full h-screen">
       <Navbar />
       <LandingPage />
 
@@ -15,6 +16,7 @@ function App() {
       <AboutUs />
       <Eyes />
       <Featured />
+      <Cards />
     </div>
   );
 }
