@@ -3,6 +3,7 @@ import LandingPage from "./components/landingPage";
 import Marquee from "./components/marquee";
 import AboutUs from "./components/AboutUs";
 import Eyes from "./components/Eyes";
+import Featured from "./components/Featured";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
 
       <Marquee />
       <AboutUs />
-      <Eyes/> 
+      <Eyes />
+      <Featured />
     </div>
   );
 }
