@@ -14,13 +14,15 @@ function Featured() {
             <p className="mb-2 font-['NeueMontreal'] text-lg ml-6">FYDE</p>
 
             <div className="relative w-full h-full">
-              <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[#CDEA68] font-['NeueMontreal'] font-semibold text-9xl z-[9] pointer-events-none">
+              {/* Positioned to overflow into the gap on the RIGHT */}
+              <h1 className="absolute top-1/2 left-full -translate-x-1/2 -translate-y-1/2 text-[#CDEA68] font-['NeueMontreal'] font-semibold text-9xl z-[9] pointer-events-none whitespace-nowrap leading-none">
                 FYDE
               </h1>
 
               <div
                 className="card w-full h-full rounded-xl overflow-hidden bg-cover bg-center"
                 style={{ backgroundImage: "url('src/assets/fyde.png')" }}
+                aria-hidden="true"
               />
             </div>
 
@@ -36,13 +38,15 @@ function Featured() {
             </p>
 
             <div className="relative w-full h-full">
-              <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[#CDEA68] font-['NeueMontreal'] font-semibold text-7xl z-[9] pointer-events-none whitespace-nowrap">
+              {/* Positioned to overflow into the gap on the LEFT */}
+              <h1 className="absolute top-1/2 right-full translate-x-1/2 -translate-y-1/2 text-[#CDEA68] font-['NeueMontreal'] font-semibold text-7xl z-[9] pointer-events-none whitespace-nowrap leading-none">
                 Meddalia Experience
               </h1>
 
               <div
                 className="card w-full h-full rounded-xl overflow-hidden bg-cover bg-center"
                 style={{ backgroundImage: "url('src/assets/meddalia.png')" }}
+                aria-hidden="true"
               />
             </div>
 
