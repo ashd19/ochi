@@ -1,14 +1,21 @@
-import React from "react";
 
 function Cards() {
   return (
-    <div className="w-full h-screen flex mt-10 px-20    items-center gap-5">
+    <div className="w-full h-screen flex mt-10 px-20 items-center gap-5">
       <div className="cardcontainer h-[50vh] w-1/2">
-        <div className="card rounded-xl  flex items-center justify-center w-full h-full bg-[#004D43]">
-          <img
-            src="https://ochi.design/wp-content/uploads/2022/04/logo001.svg"
-            alt=""
-          />
+        <div className="card rounded-xl relative w-full h-full bg-[#004D43]">
+          <div className="relative w-full h-full">
+            <img
+              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+              src="https://ochi.design/wp-content/uploads/2022/04/logo001.svg"
+              alt=""
+            />
+          </div>
+          <div className="absolute bottom-5 left-5">
+            <div className="rounded-full text-[#cceb6a] border-[#cceb6a] font-['NeueMontreal'] w-fit h-10 p-2 flex uppercase border-2">
+              C2019-2025
+            </div>
+          </div>
         </div>
       </div>
 
