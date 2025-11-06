@@ -2,22 +2,22 @@ function Footer() {
   return (
     <div className="flex justify-between px-10 py-15 gap-5 w-full h-full border-t-2 ">
       <div className="eyeopening flex-col justify-between ">
-        <div className="flex-col leading-none">
+        <div className="flex-col leading-none tracking-tighter">
           <p className="text-[9vw] tracking-tighter leading-none font-bold font-['FoundersGrotesk']">
             Eye -
           </p>
-          <br />
-          <p className="text-[9vw] font-bold  tracking-tighter leading-none font-['FoundersGrotesk-Semibold']">
+
+          <p className="text-[9vw] font-bold  -mt-3  tracking-tighter leading-none font-['FoundersGrotesk-Semibold']">
             Opening
           </p>
         </div>
-        <div className="logo  mt-83">
+        <div className="logo  mt-92">
           <svg
             width="72"
             height="30"
             viewBox="0 0 72 30"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+            xmlns="http  //www.w3.org/2000/svg"
             class="__web-inspector-hide-shortcut__"
           >
             <path
@@ -51,35 +51,65 @@ function Footer() {
         </div>
 
         <div className="socials font-['NeueMontreal-Regular] ">
-          <p className="font-['NeueMontreal-Regular'] mb-3">S:</p>
+          <p className="font-['NeueMontreal-Regular'] mb-3">S </p>
 
-          <p className="font-['NeueMontreal-Regular']">Instagram</p>
-          <p className="font-['NeueMontreal-Regular']">LinkedIn</p>
-          <p className="font-['NeueMontreal-Regular']">Twitter</p>
-          <p className="font-['NeueMontreal-Regular']">Facebook</p>
-        </div>
-        <br />
-        <div className="location text-lg font-light">
-          <p className="font-['NeueMontreal-Regular'] mb-3 ">L:</p>
-          <a href="" className="hover:underline">
-            <p className="font-['NeueMontreal-Regular']">202-1965 W 4th Ave</p>
+          <a href="" className="underline">
+            <p className="font-['NeueMontreal-Regular']">Instagram</p>
           </a>
-          <a href="" className="hover:underline">
-            <p className="font-['NeueMontreal-Regular']">Vancouver,Canada</p>
+          <a href="" className="underline">
+            <p className="font-['NeueMontreal-Regular']">LinkedIn</p>
           </a>
-          <br />
-
-          <a href="" className="hover:underline">
-            <p className="font-['NeueMontreal-Regular']">30 Chukarina</p>
+          <a href="" className="underline">
+            <p className="font-['NeueMontreal-Regular']">Twitter</p>
           </a>
-          <a href="" className="hover:underline">
-            <p className="font-['NeueMontreal-Regular']">St Lviv, Ukraine</p>
+          <a href="" className="underline">
+            <p className="font-['NeueMontreal-Regular']">Facebook</p>
           </a>
         </div>
         <br />
+        <div className="flex justify-between">
+          <div className="location text-lg font-light">
+            <p className="font-['NeueMontreal-Regular'] mb-3 ">L: </p>
+            <a href="" className="   underline">
+              <p className="font-['NeueMontreal-Regular']">
+                202-1965 W 4th Ave
+              </p>
+            </a>
+            <a href="" className="   underline">
+              <p className="font-['NeueMontreal-Regular']">Vancouver,Canada</p>
+            </a>
+            <br />
+
+            <a href="" className="   underline">
+              <p className="font-['NeueMontreal-Regular']">30 Chukarina</p>
+            </a>
+            <a href="" className="   underline">
+              <p className="font-['NeueMontreal-Regular']">St Lviv, Ukraine</p>
+            </a>
+          </div>
+
+          <div className="location text-lg font-light">
+            <p className="font-['NeueMontreal-Regular'] mb-3 ">M: </p>
+            <a href="" className="   underline">
+              <p className="font-['NeueMontreal-Regular']">Home</p>
+            </a>
+            <a href="" className="   underline">
+              <p className="font-['NeueMontreal-Regular']">Services</p>
+            </a>
+
+            <a href="" className="   underline">
+              <p className="font-['NeueMontreal-Regular']">Our work</p>
+            </a>
+            <a href="" className="   underline">
+              <p className="font-['NeueMontreal-Regular']">About Us</p>
+            </a>
+          </div>
+        </div>
+
+        <br />
         <div className="location text-lg font-light">
-          <p className="font-['NeueMontreal-Regular'] mb-3 ">E:</p>
-          <a href="" className="hover:underline">
+          <p className="font-['NeueMontreal-Regular'] mb-3 ">E </p>
+          <a href="" className="   underline">
             <p className="font-['NeueMontreal-Regular']">hello@ochi.design</p>
           </a>
         </div>
@@ -88,15 +118,14 @@ function Footer() {
           <div>
             <p className=" text-gray-400 mt-15 font-['NeueMontreal-Regular'] text-lg ">
               © ochi design 2025.{" "}
-              <a href="" className="hover:underline text-gray-400">
+              <a href="" className="   underline text-gray-400">
                 Legal Terms
               </a>
             </p>
           </div>
           <div>
             <p className=" text-gray-400 mt-15 font-['NeueMontreal-Regular'] text-lg ">
-             
-              <a href="" className="hover:underline text-gray-400">
+              <a href="" className="   underline text-gray-400">
                 Website by Obys
               </a>
             </p>
