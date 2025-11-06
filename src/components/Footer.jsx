@@ -1,13 +1,13 @@
 function Footer() {
   return (
-    <div className="flex justify-between px-10 py-15 gap-5 w-full h-full border-t-2 ">
+    <div className="flex  bg-zinc-100 justify-between px-10 py-15 gap-5 w-full h-full border-t-2 ">
       <div className="eyeopening flex-col justify-between ">
         <div className="flex-col leading-none tracking-tighter">
-          <p className="text-[9vw] tracking-tighter leading-none font-bold font-['FoundersGrotesk']">
+          <p className="text-[9vw] tracking-tighter leading-none font-semibold font-['FoundersGrotesk']">
             Eye-
           </p>
 
-          <p className="text-[9vw] font-bold  -mt-3  tracking-tighter leading-none font-['FoundersGrotesk-Semibold']">
+          <p className="text-[9vw] font-semibold  -mt-3  tracking-tighter leading-none font-['FoundersGrotesk-Semibold']">
             Opening
           </p>
         </div>

@@ -5,7 +5,7 @@ function Marquee() {
   return (
     <div
       data-scroll
-      data-scroll-speed=".2"
+      data-scroll-speed=".05"
       className="uppercase w-full rounded-t-2xl overflow-hidden py-10 bg-[#004D43]"
     >
       <div
