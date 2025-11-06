@@ -18,8 +18,8 @@ function Eyes() {
   return (
     <div className="w-full h-screen overflow-hidden">
       <div
-        data0-scroll
-        data-scroll-speed="-.7"
+        data-scroll
+        data-scroll-speed="-.8"
         className="relative w-full h-full bg-cover bg-center bg-[url('https://ochi.design/wp-content/uploads/2022/05/Top-Viewbbcbv-1-1440x921.jpg')]"
       >
         <div className="absolute flex gap-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
