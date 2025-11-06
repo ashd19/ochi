@@ -15,7 +15,7 @@ function Featured() {
 
             <div className="relative w-full h-full">
               {/* Positioned to overflow into the gap on the RIGHT */}
-              <h1 className="absolute top-1/2 left-full -translate-x-1/2 -translate-y-1/2 text-[#CDEA68] font-['NeueMontreal'] font-semibold text-9xl z-[9] pointer-events-none whitespace-nowrap leading-none">
+              <h1 className="absolute top-1/2 left-full -translate-x-1/2 -translate-y-1/2 text-[#CDEA68] font-['NeueMontreal'] font-semibold text-9xl z-9  pointer-events-none whitespace-nowrap leading-none">
                 FYDE
               </h1>
 
@@ -39,7 +39,7 @@ function Featured() {
 
             <div className="relative w-full h-full">
               {/* Positioned to overflow into the gap on the LEFT */}
-              <h1 className="absolute top-1/2 right-full translate-x-1/2 -translate-y-1/2 text-[#CDEA68] font-['NeueMontreal'] font-semibold text-7xl z-[9] pointer-events-none whitespace-nowrap leading-none">
+              <h1 className="absolute top-1/2 right-full translate-x-1/2 -translate-y-1/2 text-[#CDEA68] font-['NeueMontreal'] font-semibold text-7xl z-9 pointer-events-none whitespace-nowrap leading-none">
                 Meddalia Experience
               </h1>
 
