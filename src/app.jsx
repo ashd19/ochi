@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
   return (
-    <div className="w-full" data-scroll-container>
+    <div className="w-full bg-zinc-100 data-scroll-container">
       <Navbar />
       <LandingPage />
       <Marquee />

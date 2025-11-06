@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
 import Box from "./Box.jsx";
+import { useState } from "react";
 
 function Featured() {
-  motion;
+  const [isHoveringFyde, setIsHoveringFyde] = useState(false);
+  const [isHoveringMeddalia, setIsHoveringMeddalia] = useState(false);
+
   return (
     <div className="w-full py-20">
       <div className="w-full px-20 border-b pb-20">
@@ -12,14 +15,30 @@ function Featured() {
       </div>
       <div className="px-20">
         <div className="cards w-full mt-10 flex gap-10">
-          <div className="cardcontainer w-1/2 relative h-[80vh]">
+          {/* FYDE Card */}
+          <div
+            onMouseEnter={() => setIsHoveringFyde(true)}
+            onMouseLeave={() => setIsHoveringFyde(false)}
+            className="cardcontainer w-1/2 relative h-[80vh]"
+          >
             <p className="mb-2 font-['NeueMontreal'] text-lg ml-6">FYDE</p>
 
             <div className="relative w-full h-full">
-              {/* Positioned to overflow into the gap on the RIGHT */}
-              <h1 className="absolute top-1/2 left-full -translate-x-1/2 -translate-y-1/2 text-[#CDEA68] font-['NeueMontreal'] font-semibold text-9xl z-9  pointer-events-none whitespace-nowrap leading-none">
+              <h1 className="absolute top-1/2 left-full -translate-x-1/2 -translate-y-1/2 text-[#CDEA68] font-['NeueMontreal'] font-semibold text-9xl z-9 pointer-events-none whitespace-nowrap leading-none overflow-hidden">
                 {"FYDE".split("").map((item, index) => (
-                  <span key={index}> {item}</span>
+                  <motion.span
+                    animate={isHoveringFyde ? { y: "0" } : { y: "100%" }}
+                    transition={{
+                      ease: [0.22, 1, 0.36, 1],
+                      delay: index * 0.05,
+                      duration: 0.5,
+                    }}
+                    initial={{ y: "100%" }}
+                    className="inline-block"
+                    key={index}
+                  >
+                    {item}
+                  </motion.span>
                 ))}
               </h1>
 
@@ -39,17 +58,27 @@ function Featured() {
             </div>
           </div>
 
-          <div className="cardcontainer relative w-1/2 h-[80vh]">
+          {/* Meddalia Card */}
+          <div
+            onMouseEnter={() => setIsHoveringMeddalia(true)}
+            onMouseLeave={() => setIsHoveringMeddalia(false)}
+            className="cardcontainer relative w-1/2 h-[80vh]"
+          >
             <p className="mb-2 uppercase font-['NeueMontreal'] text-lg ml-6">
               Meddalia Experience
             </p>
 
             <div className="relative w-full h-full">
-              {/* Positioned to overflow into the gap on the LEFT */}
-              <h1 className="absolute flex  top-1/2 right-full translate-x-1/2 -translate-y-1/2 text-[#CDEA68] font-['NeueMontreal'] font-bold text-7xl z-9 pointer-events-none whitespace-nowrap leading-none">
+              <h1 className="absolute flex top-1/2 right-full translate-x-1/2 -translate-y-1/2 text-[#CDEA68] font-['NeueMontreal'] font-bold text-7xl z-9 pointer-events-none whitespace-nowrap leading-none overflow-hidden">
                 {"Meddalia Experience".split("").map((item, index) => (
                   <motion.span
-                    initial={{}}
+                    animate={isHoveringMeddalia ? { y: "0" } : { y: "100%" }}
+                    transition={{
+                      ease: [0.22, 1, 0.36, 1],
+                      delay: index * 0.01,
+                      duration: 1,
+                    }}
+                    initial={{ y: "100%" }}
                     className="inline-block"
                     key={index}
                   >
