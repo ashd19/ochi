@@ -9,7 +9,7 @@ function landingPage() {
       data-scroll-speed="-.8"
       data-scroll-section
       className="  w-full h-screen pt-1 "
-    > 
+    >
       <div className="flex justify-between ">
         <div className="textstructure mt-40 ml-20 ">
           {["we create", "Eye-opening", "presentations"].map((item, index) => (
@@ -37,7 +37,7 @@ function landingPage() {
           ))}
         </div>
         <div className="siteoftheday">
-          <div className="absolute right-8 top-1/2 -translate-y-1/2">
+          <div className="fixed right-8 top-1/2 -translate-y-1/2 z-50">
             <div className="bg-red-500 w-14 h-36 flex items-center justify-center">
               <h1 className="text-white font-bold rotate-270 text-xs leading-none">
                 Site of the day
