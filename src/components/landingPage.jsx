@@ -1,6 +1,8 @@
+import { motion } from "framer-motion";
 import { MoveUpRight } from "lucide-react";
 
 function landingPage() {
+  motion;
   return (
     <div className="w-full h-screen pt-1 ">
       <div className="flex justify-between ">
@@ -9,7 +11,13 @@ function landingPage() {
             <div className="masker" key={index}>
               <div className="w-fit flex gap-3 ">
                 {index == 1 && (
-                  <div className="w-[8vw] h-[5vw]   bg-red-700"></div>
+                  <motion.div
+                    initial={{ width: 0 }}
+                    animate={{ width: "8vw" }}
+                    className="w-[8vw] h-[5vw]  "
+                  >
+                    <img src="public/animated.png" alt="" />
+                  </motion.div>
                 )}
                 <h1 className="mr-[1vw] uppercase text-8xl   font-semibold leading-[5.5vw]  tracking-tighter font-[FoundersGrotesk]">
                   {item}

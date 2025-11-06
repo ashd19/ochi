@@ -4,7 +4,7 @@ function Footer() {
       <div className="eyeopening flex-col justify-between ">
         <div className="flex-col leading-none tracking-tighter">
           <p className="text-[9vw] tracking-tighter leading-none font-bold font-['FoundersGrotesk']">
-            Eye -
+            Eye-
           </p>
 
           <p className="text-[9vw] font-bold  -mt-3  tracking-tighter leading-none font-['FoundersGrotesk-Semibold']">
