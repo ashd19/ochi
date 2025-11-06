@@ -1,10 +1,13 @@
-/* eslint-disable no-unused-vars */
-
 import { motion } from "framer-motion";
 
 function Marquee() {
+  motion;
   return (
-    <div className="uppercase w-full rounded-t-2xl overflow-hidden py-10 bg-[#004D43]">
+    <div
+      data-scroll
+      data-scroll-speed=".2"
+      className="uppercase w-full rounded-t-2xl overflow-hidden py-10 bg-[#004D43]"
+    >
       <div
         className="text-white  gap-3 notpx-4 flex  border-t-2 border-b-2 overflow-hidden border-white/50  font-semibold
          whitespace-nowrap"

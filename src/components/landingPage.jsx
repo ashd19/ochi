@@ -4,7 +4,12 @@ import { MoveUpRight } from "lucide-react";
 function landingPage() {
   motion;
   return (
-    <div className="w-full h-screen pt-1 ">
+    <div
+      data-scroll
+      data-scroll-speed="-.8"
+      data-scroll-section
+      className="  w-full h-screen pt-1 "
+    > 
       <div className="flex justify-between ">
         <div className="textstructure mt-40 ml-20 ">
           {["we create", "Eye-opening", "presentations"].map((item, index) => (
@@ -14,10 +19,11 @@ function landingPage() {
                   <motion.div
                     initial={{ width: 0 }}
                     animate={{ width: "12vw" }}
-                    className="w-full object-cover h-[7vw] overflow-hidden "
+                    transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
+                    className="h-[7vw] overflow-hidden"
                   >
                     <img
-                      className=" w-full h-[6vw]"
+                      className="w-full h-full object-cover"
                       src="https://i.icanvas.com/ic3/horizontal-image/DLH71.jpg?fit=crop&width=435&height=300"
                       alt=""
                     />

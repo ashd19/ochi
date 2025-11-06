@@ -11,7 +11,7 @@ function Footer() {
             Opening
           </p>
         </div>
-        <div className="logo  mt-92">
+        <div className="logo  mt-90">
           <svg
             width="72"
             height="30"
