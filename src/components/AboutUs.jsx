@@ -77,7 +77,7 @@ function AboutUs() {
         <div>
           <img
             className="w-[600px] h-[450px]"
-            src="src/assets/pic.jpg"
+            src="https://ochi.design/wp-content/uploads/2022/05/Homepage-Photo-663x469.jpg"
             alt=""
           />
         </div>

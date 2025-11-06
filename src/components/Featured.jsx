@@ -48,7 +48,10 @@ function Featured() {
 
               <div
                 className="card w-full h-full rounded-xl overflow-hidden bg-cover bg-center"
-                style={{ backgroundImage: "url('https://ochi.design/wp-content/uploads/2025/08/Med_Website_0.png')" }}
+                style={{
+                  backgroundImage:
+                    "url('https://ochi.design/wp-content/uploads/2025/08/Med_Website_0.png')",
+                }}
                 aria-hidden="true"
               />
             </div>
