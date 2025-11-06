@@ -13,13 +13,17 @@ function landingPage() {
                 {index == 1 && (
                   <motion.div
                     initial={{ width: 0 }}
-                    animate={{ width: "8vw" }}
-                    className="w-[8vw] h-[5vw]  "
+                    animate={{ width: "12vw" }}
+                    className="w-full object-cover h-[7vw] overflow-hidden "
                   >
-                    <img src="public/animated.png" alt="" />
+                    <img
+                      className=" w-full h-[6vw]"
+                      src="https://i.icanvas.com/ic3/horizontal-image/DLH71.jpg?fit=crop&width=435&height=300"
+                      alt=""
+                    />
                   </motion.div>
                 )}
-                <h1 className="mr-[1vw] uppercase text-8xl   font-semibold leading-[5.5vw]  tracking-tighter font-[FoundersGrotesk]">
+                <h1 className="mr-[1vw] uppercase text-8xl   font-semibold leading-[6.5vw]  tracking-tighter font-[FoundersGrotesk]">
                   {item}
                 </h1>
               </div>
