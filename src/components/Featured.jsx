@@ -21,7 +21,10 @@ function Featured() {
 
               <div
                 className="card w-full h-full rounded-xl overflow-hidden bg-cover bg-center"
-                style={{ backgroundImage: "url('src/assets/fyde.png')" }}
+                style={{
+                  backgroundImage:
+                    "url('https://ochi.design/wp-content/uploads/2025/02/Fyde_Front-1-1326x1101.png')",
+                }}
                 aria-hidden="true"
               />
             </div>
@@ -45,7 +48,7 @@ function Featured() {
 
               <div
                 className="card w-full h-full rounded-xl overflow-hidden bg-cover bg-center"
-                style={{ backgroundImage: "url('src/assets/meddalia.png')" }}
+                style={{ backgroundImage: "url('https://ochi.design/wp-content/uploads/2025/08/Med_Website_0.png')" }}
                 aria-hidden="true"
               />
             </div>
