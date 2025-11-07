@@ -36,8 +36,8 @@ function LandingPage() {
             </div>
           ))}
         </div>
-        <div className="siteoftheday">
-          <div className="fixed right-2 md:right-8 top-1/2 -translate-y-1/2 z-50">
+        <div className="siteoftheday mb-[50px]">
+          <div className="fixed right-0   md:right-8 top-1/4  -translate-y-1/2 z-50 ">
             <div className="bg-red-500 w-10 md:w-14 h-28 md:h-36 flex items-center justify-center">
               <h1 className="text-white font-bold rotate-270 text-xs leading-none">
                 Site of the day

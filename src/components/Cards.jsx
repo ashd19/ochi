@@ -10,7 +10,7 @@ function Cards() {
               alt=""
             />
           </div>
-          <div className="absolute bottom-5 left-5">
+          <div className="absolute bottom-1 left-5">
             <div className="rounded-full text-[#cceb6a] border-[#cceb6a] font-['NeueMontreal'] w-fit h-10 p-2 flex uppercase border-2 text-xs md:text-sm">
               C2019-2025
             </div>
@@ -18,7 +18,7 @@ function Cards() {
         </div>
       </div>
 
-      <div className="cardcontainer flex flex-col md:flex-row gap-5 w-full md:w-1/2 h-[50vh]">
+      <div className="cardcontainer flex flex-col md:flex-row gap-5 w-full md:w-1/2 h-[70vh] md:h-[50vh]">
         <div className="card rounded-xl relative flex gap-5 w-full  md:w-1/2 h-full bg-[#004D43]">
           <div className="relative w-full h-full">
             <img
@@ -28,7 +28,7 @@ function Cards() {
             />
           </div>
 
-          <div className="absolute bottom-5 left-5 ">
+          <div className="absolute bottom-1 left-5 ">
             <div className="rounded-full text-[#cceb6a]  border-[#cceb6a] font-['NeueMontreal'] w-fit h-10 p-2 flex uppercase border-2 text-xs md:text-sm">
               RATING 5.0 ON CLUTCH
             </div>
@@ -42,7 +42,7 @@ function Cards() {
               alt=""
             />
           </div>
-          <div className="absolute bottom-5 left-5">
+          <div className="absolute bottom-1 left-5">
             <div className="rounded-full text-[#cceb6a] border-[#cceb6a] font-['NeueMontreal'] w-fit h-10 p-2 flex uppercase border-2 text-xs md:text-sm">
               BUSINESS BOOTCAMP ALUMNI
             </div>
