@@ -1,19 +1,19 @@
 function AboutUs() {
   return (
     <div className="w-full   bg-[#CDEA68] rounded-t-3xl">
-      <div className=" p-20">
-        <h1 className="font-[NeueMontreal] text-[3vw] leading-none tracking-tight font-light">
+      <div className=" p-4 md:p-20">
+        <h1 className="font-[NeueMontreal] text-lg md:text-[3vw] leading-none tracking-tight font-light">
           We craft category-defining presentations, brand identities, and
           digital experiences that drive funding, sales, and market leadership.
         </h1>
       </div>
-      <div className="border  mt-5 w-full p-10 flex justify-between">
+      <div className="border  mt-5 w-full p-4 md:p-10 flex flex-col md:flex-row justify-between gap-5">
         <div>
-          <p className=" font-[NeueMontreal] text-[1.5vw]">
+          <p className=" font-[NeueMontreal] text-base md:text-[1.5vw]">
             What can you expect
           </p>
         </div>
-        <div className="flex flex-col text-[1.5vw]  gap-5">
+        <div className="flex flex-col text-base md:text-[1.5vw]  gap-5">
           <p className=" font-[NeueMontreal]">
             We don't just make slides. We shape <br />
             strategy, storytelling, design scalable <br />
@@ -37,9 +37,9 @@ function AboutUs() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-5 mr-30">
-          <div className="mt-70">
-            <p className=" text-[1.5vw] font-[NeueMontreal]">
+        <div className="flex flex-col gap-5 mr-0 md:mr-30">
+          <div className="mt-10 md:mt-70">
+            <p className=" text-base md:text-[1.5vw] font-[NeueMontreal]">
               S: <br />
               <a href="" className="hover:underline">
                 Instagram
@@ -61,14 +61,14 @@ function AboutUs() {
         </div>
       </div>
       {/* How can we help  */}
-      <div className="flex border-t-2 p-10  border-white/50 justify-between">
+      <div className="flex flex-col md:flex-row border-t-2 p-4 md:p-10  border-white/50 justify-between gap-5">
         <div>
           <div className="">
-            <h1 className="text-[4vw] font-[NeueMontreal] tracking-tight">
+            <h1 className="text-2xl md:text-[4vw] font-[NeueMontreal] tracking-tight">
               How can we help :
             </h1>
           </div>
-          <button className="bg-black flex items-center justify-between uppercase text-white  rounded-4xl px-10 py-6  font-[NeueMontreal]">
+          <button className="bg-black flex items-center justify-between uppercase text-white  rounded-4xl px-6 md:px-10 py-4 md:py-6  font-[NeueMontreal] mt-4">
             Read more
             <div className="w-2 h-2 bg-zinc-100 rounded-full "></div>
           </button>
@@ -76,7 +76,7 @@ function AboutUs() {
         {/* pic  */}
         <div>
           <img
-            className="w-[600px] h-[450px]"
+            className="w-full md:w-[600px] h-auto md:h-[450px]"
             src="https://ochi.design/wp-content/uploads/2022/05/Homepage-Photo-663x469.jpg"
             alt=""
           />

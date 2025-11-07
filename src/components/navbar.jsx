@@ -1,8 +1,9 @@
-import React from "react";
-
-function navbar() {
+import React, { useState } from "react";
+import { Menu } from "lucide-react";
+function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="fixed z-999 w-full px-20 py-8 font-['NeueMontreal-Regular'] flex  justify-between ">
+    <div className="fixed z-999 w-full px-4 md:px-20 py-8 font-['NeueMontreal-Regular'] flex  justify-between ">
       <div className="logo">
         <svg
           width="72"
@@ -34,7 +35,7 @@ function navbar() {
           ></path>
         </svg>
       </div>
-      <div className="links flex capitalize gap-8">
+      <div className="links hidden md:flex md:capitalize md:gap-8">
         {["Services", "Our work", "About us", "Insights", "Contact us"].map(
           (item, index) => (
             <a
@@ -47,8 +48,31 @@ function navbar() {
           )
         )}
       </div>
+      <button className="md:hidden " onClick={() => setIsOpen(!isOpen)}>
+        <Menu />
+      </button>
+      <div
+        className={`md:hidden ${
+          isOpen ? "block" : "hidden"
+        } absolute top-full left-0 w-full bg-black text-white py-4 px-4`}
+      >
+        <div className="flex flex-col gap-4">
+          {["Services", "Our work", "About us", "Insights", "Contact us"].map(
+            (item, index) => (
+              <a
+                key={index}
+                className="text-lg font-light"
+                href=""
+                onClick={() => setIsOpen(false)}
+              >
+                {item}
+              </a>
+            )
+          )}
+        </div>
+      </div>
     </div>
   );
 }
 
-export default navbar;
+export default Navbar;

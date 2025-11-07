@@ -6,107 +6,108 @@ function Featured() {
   const [isHoveringFyde, setIsHoveringFyde] = useState(false);
   const [isHoveringMeddalia, setIsHoveringMeddalia] = useState(false);
 
-  return (
-    <div className="w-full py-20">
-      <div className="w-full px-20 border-b pb-20">
-        <h1 className="text-7xl font-['NeueMontreal'] tracking-tight">
-          Featured Projects:
-        </h1>
-      </div>
-      <div className="px-20">
-        <div className="cards w-full mt-10 flex gap-10">
-          {/* FYDE Card */}
-          <div
-            onMouseEnter={() => setIsHoveringFyde(true)}
-            onMouseLeave={() => setIsHoveringFyde(false)}
-            className="cardcontainer w-1/2 relative h-[80vh]"
-          >
-            <p className="mb-2 font-['NeueMontreal'] text-lg ml-6">FYDE</p>
+  motion;
+  <div className="w-full py-10 md:py-20">
+    <div className="w-full px-4 md:px-20 border-b pb-10 md:pb-20">
+      <h1 className="text-4xl md:text-7xl font-['NeueMontreal'] tracking-tight">
+        Featured Projects:
+      </h1>
+    </div>
+    <div className="px-4 md:px-20">
+      <div className="cards w-full mt-10 flex flex-col md:flex-row gap-10">
+        {/* FYDE Card */}
+        <div
+          onMouseEnter={() => setIsHoveringFyde(true)}
+          onMouseLeave={() => setIsHoveringFyde(false)}
+          className="cardcontainer w-full md:w-1/2 relative h-[50vh] md:h-[80vh]"
+        >
+          <p className="mb-2 font-['NeueMontreal'] text-base md:text-lg ml-3 md:ml-6">
+            FYDE
+          </p>
 
-            <div className="relative w-full h-full">
-              <h1 className="absolute top-1/2 left-full -translate-x-1/2 -translate-y-1/2 text-[#CDEA68] font-['NeueMontreal'] font-semibold text-9xl z-9 pointer-events-none whitespace-nowrap leading-none overflow-hidden">
-                {"FYDE".split("").map((item, index) => (
-                  <motion.span
-                    animate={isHoveringFyde ? { y: "0" } : { y: "100%" }}
-                    transition={{
-                      ease: [0.22, 1, 0.36, 1],
-                      delay: index * 0.05,
-                      duration: 0.5,
-                    }}
-                    initial={{ y: "100%" }}
-                    className="inline-block"
-                    key={index}
-                  >
-                    {item}
-                  </motion.span>
-                ))}
-              </h1>
+          <div className="relative w-full h-full">
+            <h1 className="absolute top-1/2 left-1/2 md:left-full -translate-x-1/2 -translate-y-1/2 text-[#CDEA68] font-['NeueMontreal'] font-semibold text-6xl md:text-9xl z-9 pointer-events-none whitespace-nowrap leading-none overflow-hidden">
+              {"FYDE".split("").map((item, index) => (
+                <motion.span
+                  animate={isHoveringFyde ? { y: "0" } : { y: "100%" }}
+                  transition={{
+                    ease: [0.22, 1, 0.36, 1],
+                    delay: index * 0.05,
+                    duration: 0.5,
+                  }}
+                  initial={{ y: "100%" }}
+                  className="inline-block"
+                  key={index}
+                >
+                  {item}
+                </motion.span>
+              ))}
+            </h1>
 
-              <div
-                className="card w-full h-full rounded-xl overflow-hidden bg-cover bg-center"
-                style={{
-                  backgroundImage:
-                    "url('https://ochi.design/wp-content/uploads/2025/02/Fyde_Front-1-1326x1101.png')",
-                }}
-                aria-hidden="true"
-              />
-            </div>
-
-            <div className="mt-3 flex gap-5">
-              <Box text={"BRAND IDENTITY"} />
-              <Box text={"pitch deck"} />
-            </div>
+            <div
+              className="card w-full h-full rounded-xl overflow-hidden bg-cover bg-center"
+              style={{
+                backgroundImage:
+                  "url('https://ochi.design/wp-content/uploads/2025/02/Fyde_Front-1-1326x1101.png')",
+              }}
+              aria-hidden="true"
+            />
           </div>
 
-          {/* Meddalia Card */}
-          <div
-            onMouseEnter={() => setIsHoveringMeddalia(true)}
-            onMouseLeave={() => setIsHoveringMeddalia(false)}
-            className="cardcontainer relative w-1/2 h-[80vh]"
-          >
-            <p className="mb-2 uppercase font-['NeueMontreal'] text-lg ml-6">
-              Meddalia Experience
-            </p>
+          <div className="mt-3 flex gap-3 md:gap-5 flex-wrap">
+            <Box text={"BRAND IDENTITY"} />
+            <Box text={"pitch deck"} />
+          </div>
+        </div>
 
-            <div className="relative w-full h-full">
-              <h1 className="absolute flex top-1/2 right-full translate-x-1/2 -translate-y-1/2 text-[#CDEA68] font-['NeueMontreal'] font-bold text-7xl z-9 pointer-events-none whitespace-nowrap leading-none overflow-hidden">
-                {"Meddalia Experience".split("").map((item, index) => (
-                  <motion.span
-                    animate={isHoveringMeddalia ? { y: "0" } : { y: "100%" }}
-                    transition={{
-                      ease: [0.22, 1, 0.36, 1],
-                      delay: index * 0.01,
-                      duration: 1,
-                    }}
-                    initial={{ y: "100%" }}
-                    className="inline-block"
-                    key={index}
-                  >
-                    {item}
-                  </motion.span>
-                ))}
-              </h1>
+        {/* Meddalia Card */}
+        <div
+          onMouseEnter={() => setIsHoveringMeddalia(true)}
+          onMouseLeave={() => setIsHoveringMeddalia(false)}
+          className="cardcontainer relative w-full md:w-1/2 h-[50vh] md:h-[80vh]"
+        >
+          <p className="mb-2 uppercase font-['NeueMontreal'] text-base md:text-lg ml-3 md:ml-6">
+            Meddalia Experience
+          </p>
 
-              <div
-                className="card w-full h-full rounded-xl overflow-hidden bg-cover bg-center"
-                style={{
-                  backgroundImage:
-                    "url('https://ochi.design/wp-content/uploads/2025/08/Med_Website_0.png')",
-                }}
-                aria-hidden="true"
-              />
-            </div>
+          <div className="relative w-full h-full">
+            <h1 className="absolute flex top-1/2 left-1/2 md:right-full md:translate-x-1/2 -translate-x-1/2 -translate-y-1/2 text-[#CDEA68] font-['NeueMontreal'] font-bold text-4xl md:text-7xl z-9 pointer-events-none whitespace-nowrap leading-none overflow-hidden">
+              {"Meddalia Experience".split("").map((item, index) => (
+                <motion.span
+                  animate={isHoveringMeddalia ? { y: "0" } : { y: "100%" }}
+                  transition={{
+                    ease: [0.22, 1, 0.36, 1],
+                    delay: index * 0.01,
+                    duration: 1,
+                  }}
+                  initial={{ y: "100%" }}
+                  className="inline-block"
+                  key={index}
+                >
+                  {item}
+                </motion.span>
+              ))}
+            </h1>
 
-            <div className="mt-3 flex gap-5">
-              <Box text={"brand identity"} />
-              <Box text={"Executive keynote"} />
-              <Box text={"product launch"} />
-            </div>
+            <div
+              className="card w-full h-full rounded-xl overflow-hidden bg-cover bg-center"
+              style={{
+                backgroundImage:
+                  "url('https://ochi.design/wp-content/uploads/2025/08/Med_Website_0.png')",
+              }}
+              aria-hidden="true"
+            />
+          </div>
+
+          <div className="mt-3 flex gap-3 md:gap-5 flex-wrap">
+            <Box text={"brand identity"} />
+            <Box text={"Executive keynote"} />
+            <Box text={"product launch"} />
           </div>
         </div>
       </div>
     </div>
-  );
+  </div>;
 }
 
 export default Featured;

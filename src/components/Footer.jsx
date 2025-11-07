@@ -1,23 +1,23 @@
 function Footer() {
   return (
-    <div className="flex  bg-zinc-100 justify-between px-10 py-15 gap-5 w-full h-full border-t-2 ">
+    <div className="flex flex-col md:flex-row bg-zinc-100 justify-between px-4 md:px-10 py-10 md:py-15 gap-5 w-full h-full border-t-2 ">
       <div className="eyeopening flex-col justify-between ">
         <div className="flex-col leading-none tracking-tighter">
-          <p className="text-[9vw] tracking-tighter leading-none font-semibold font-['FoundersGrotesk']">
+          <p className="text-[6vw] md:text-[9vw] tracking-tighter leading-none font-semibold font-['FoundersGrotesk']">
             Eye-
           </p>
 
-          <p className="text-[9vw] font-semibold  -mt-3  tracking-tighter leading-none font-['FoundersGrotesk-Semibold']">
+          <p className="text-[6vw] md:text-[9vw] mt-2 font-semibold  md:-mt-3  tracking-tighter leading-none font-['FoundersGrotesk-Semibold']">
             Opening
           </p>
         </div>
-        <div className="logo  mt-90">
+        <div className="logo  mt-10 md:mt-90">
           <svg
             width="72"
             height="30"
             viewBox="0 0 72 30"
             fill="none"
-            xmlns="http  //www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/2000/svg"
             class="__web-inspector-hide-shortcut__"
           >
             <path
@@ -45,7 +45,7 @@ function Footer() {
       </div>
       <div className="presentations">
         <div className="flex-col">
-          <p className="text-[9vw] mr-5 font-bold font-['FoundersGrotesk-Semibold']  tracking-tighter leading-none">
+          <p className="text-[6vw] md:text-[9vw] mr-5 font-bold font-['FoundersGrotesk-Semibold']  tracking-tighter leading-none">
             Presentations
           </p>
         </div>
@@ -67,8 +67,8 @@ function Footer() {
           </a>
         </div>
         <br />
-        <div className="flex justify-between">
-          <div className="location text-lg font-light">
+        <div className="flex flex-col md:flex-row justify-between gap-5">
+          <div className="location text-base md:text-lg font-light">
             <p className="font-['NeueMontreal-Regular'] mb-3 ">L: </p>
             <a href="" className="   underline">
               <p className="font-['NeueMontreal-Regular']">
@@ -88,7 +88,7 @@ function Footer() {
             </a>
           </div>
 
-          <div className="location text-lg font-light">
+          <div className="location text-base md:text-lg font-light">
             <p className="font-['NeueMontreal-Regular'] mb-3 ">M: </p>
             <a href="" className="   underline">
               <p className="font-['NeueMontreal-Regular']">Home</p>
@@ -107,16 +107,16 @@ function Footer() {
         </div>
 
         <br />
-        <div className="location text-lg font-light">
+        <div className="location text-base md:text-lg font-light">
           <p className="font-['NeueMontreal-Regular'] mb-3 ">E </p>
           <a href="" className="   underline">
             <p className="font-['NeueMontreal-Regular']">hello@ochi.design</p>
           </a>
         </div>
 
-        <div className="flex justify-between">
+        <div className="flex flex-col md:flex-row justify-between gap-5">
           <div>
-            <p className=" text-gray-400 mt-15 font-['NeueMontreal-Regular'] text-lg ">
+            <p className=" text-gray-400 mt-10 md:mt-15 font-['NeueMontreal-Regular'] text-base md:text-lg ">
               © ochi design 2025.{" "}
               <a href="" className="   underline text-gray-400">
                 Legal Terms
@@ -124,7 +124,7 @@ function Footer() {
             </p>
           </div>
           <div>
-            <p className=" text-gray-400 mt-15 font-['NeueMontreal-Regular'] text-lg ">
+            <p className=" text-gray-400 mt-10 md:mt-15 font-['NeueMontreal-Regular'] text-base md:text-lg ">
               <a href="" className="   underline text-gray-400">
                 Website by Obys
               </a>
